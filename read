@@ -1,0 +1,31 @@
+测试jwt，jwt分为三部分，头，载体（存放一些信息），签名
+
+一、创建jwt
+    1、添加jwt依赖
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+    2、创建生成token方法，用于生成jwt数据
+        com.yuqn.util.JwtUtil.creatJwt();
+二、获取jwt载体内容,获取内容并不需要解密
+    1、添加jwt依赖
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+    2、创建获取token数据的方法，用于获取jwt载体中数据
+        com.yuqn.util.JwtUtil.getTokenText();
+三、校检jwt
+    1、添加jwt依赖
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+    2、创建获取token数据的方法，用于获取jwt载体中数据
+        com.yuqn.util.JwtUtil.ifTrue();
+
+token+redis：单点登录，不同浏览器登录，会在redis中挤掉原有token。
